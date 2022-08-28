@@ -377,7 +377,7 @@ function createDimension(button) {
         viewer.context.renderer.postProduction.update();
       } else if (event.code === "Escape") {
         viewer.dimensions.cancelDrawing();
-        button.classList.toggle("active");
+        button.classList.remove("active");
         viewer.dimensions.previewActive = false;
         pick();
       }
