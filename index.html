@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="../../../favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 780px)" href="mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Quicksand:wght@600&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
@@ -43,91 +41,33 @@
     <!-- Icons Grid-->
     <section id="viewer" class="body-main">
         <div class="container">
+            <div id="viewer-container" class="disabled" style="height: 10px; width: 10px;"></div>
             <div class="body-menu" >
-                <div class="miniature box">
-                    <a href="./viewer.html"> Nombre Proyecto.IFC</a>
+                <div class="miniature" >
+                    <div id="previewer-container-ifc"> </div>
                 </div>
                 <div class="description box">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae adipisci, assumenda dolorem quibusdam quam neque illum labore quas laudantium itaque ipsa architecto consequuntur vitae dignissimos alias ad, tempora nobis.
-                    Modi aut quas voluptatem ab, velit animi, ullam quisquam molestias saepe dolore distinctio delectus omnis. Hic, distinctio asperiores magnam cumque tempora porro, ipsum quisquam officiis molestias veritatis, eaque eum accusamus.</p>
+                    <a href="./viewer-ifc.html" id="ifc-model"> sample_model.ifc</a>
+                    <p>IFC models are easily manageable with this library, in this case several available tools are developed for IFC files without optimizing, that is, as they are obtained
+                        of the original software. This is the beginning and the possibilities are endless if this is adds optimization procedures and data storage in more efficient formats.</p>
                 </div>
             </div>
-            <div class="body-menu">
-                <div class="miniature box">
-                    <a href="./viewer.html"> Nombre Proyecto.IFC</a>
+            <div class="body-menu">            
+                <div class="miniature" >
+                    
+                    <div id="previewer-container-gltf"> </div>
                 </div>
                 <div class="description box">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae adipisci, assumenda dolorem quibusdam quam neque illum labore quas laudantium itaque ipsa architecto consequuntur vitae dignissimos alias ad, tempora nobis.
-                    Modi aut quas voluptatem ab, velit animi, ullam quisquam molestias saepe dolore distinctio delectus omnis. Hic, distinctio asperiores magnam cumque tempora porro, ipsum quisquam officiis molestias veritatis, eaque eum accusamus.</p>
+                    <a href="./viewer.html" id="gltf-model">sample_model.gltf</a>
+                    <p>Interaction with GLTF extension models is also possible. The format has been noted as an important standard for augmented reality, integrating with modeling software such as Autodesk Maya, Autodesk 3ds Max, and Poly, best known for supporting 3D point cloud models and its increasing use in the AEC industry.</p>
                 </div>
             </div>
-            <div class="body-menu">
-                <div class="miniature box">
-                    <a href="./viewer.html"> Nombre Proyecto.IFC</a>
-                </div>
-                <div class="description box">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae adipisci, assumenda dolorem quibusdam quam neque illum labore quas laudantium itaque ipsa architecto consequuntur vitae dignissimos alias ad, tempora nobis.
-                    Modi aut quas voluptatem ab, velit animi, ullam quisquam molestias saepe dolore distinctio delectus omnis. Hic, distinctio asperiores magnam cumque tempora porro, ipsum quisquam officiis molestias veritatis, eaque eum accusamus.</p>
-                </div>
-            </div>
-            <div class="body-menu">
-                <div class="miniature box">
-                    <a href="./viewer.html"> Nombre Proyecto.IFC</a>
-                </div>
-                <div class="description box">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae adipisci, assumenda dolorem quibusdam quam neque illum labore quas laudantium itaque ipsa architecto consequuntur vitae dignissimos alias ad, tempora nobis.
-                    Modi aut quas voluptatem ab, velit animi, ullam quisquam molestias saepe dolore distinctio delectus omnis. Hic, distinctio asperiores magnam cumque tempora porro, ipsum quisquam officiis molestias veritatis, eaque eum accusamus.</p>
-                </div>
-            </div>
-            <div class="body-menu">
-                <div class="miniature box">
-                    <a href="./viewer.html"> Nombre Proyecto.IFC</a>
-                </div>
-                <div class="description box">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae adipisci, assumenda dolorem quibusdam quam neque illum labore quas laudantium itaque ipsa architecto consequuntur vitae dignissimos alias ad, tempora nobis.
-                    Modi aut quas voluptatem ab, velit animi, ullam quisquam molestias saepe dolore distinctio delectus omnis. Hic, distinctio asperiores magnam cumque tempora porro, ipsum quisquam officiis molestias veritatis, eaque eum accusamus.</p>
-                </div>
-            </div>
-            <div class="body-menu">
-                <div class="miniature box">
-                    <a href="./viewer.html"> Nombre Proyecto.IFC</a>
-                </div>
-                <div class="description box">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae adipisci, assumenda dolorem quibusdam quam neque illum labore quas laudantium itaque ipsa architecto consequuntur vitae dignissimos alias ad, tempora nobis.
-                    Modi aut quas voluptatem ab, velit animi, ullam quisquam molestias saepe dolore distinctio delectus omnis. Hic, distinctio asperiores magnam cumque tempora porro, ipsum quisquam officiis molestias veritatis, eaque eum accusamus.</p>
-                </div>
-            </div>
-            <div class="body-menu">
-                <div class="miniature box">
-                    <a href="./viewer.html"> Nombre Proyecto.IFC</a>
-                </div>
-                <div class="description box">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae adipisci, assumenda dolorem quibusdam quam neque illum labore quas laudantium itaque ipsa architecto consequuntur vitae dignissimos alias ad, tempora nobis.
-                    Modi aut quas voluptatem ab, velit animi, ullam quisquam molestias saepe dolore distinctio delectus omnis. Hic, distinctio asperiores magnam cumque tempora porro, ipsum quisquam officiis molestias veritatis, eaque eum accusamus.</p>
-                </div>
-            </div>
-            <div class="body-menu">
-                <div class="miniature box">
-                    <a href="./viewer.html"> Nombre Proyecto.IFC</a>
-                </div>
-                <div class="description box">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae adipisci, assumenda dolorem quibusdam quam neque illum labore quas laudantium itaque ipsa architecto consequuntur vitae dignissimos alias ad, tempora nobis.
-                    Modi aut quas voluptatem ab, velit animi, ullam quisquam molestias saepe dolore distinctio delectus omnis. Hic, distinctio asperiores magnam cumque tempora porro, ipsum quisquam officiis molestias veritatis, eaque eum accusamus.</p>
-                </div>
-            </div>
-            <div class="body-menu">
-                <div class="miniature box">
-                    <a href="./viewer.html"> Nombre Proyecto.IFC</a>
-                </div>
-                <div class="description box">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae adipisci, assumenda dolorem quibusdam quam neque illum labore quas laudantium itaque ipsa architecto consequuntur vitae dignissimos alias ad, tempora nobis.
-                    Modi aut quas voluptatem ab, velit animi, ullam quisquam molestias saepe dolore distinctio delectus omnis. Hic, distinctio asperiores magnam cumque tempora porro, ipsum quisquam officiis molestias veritatis, eaque eum accusamus.</p>
-                </div>
-            </div>
+            <input type="file" id="file-input">
+            <button class="body-button" id="save-model">Add Model</button>
+            <button class="body-button" id="load-model">Go to Model</button>
+            <a id="file-load" href="./viewer-custom.html" class="disabled"></a>
         </div>
     </section>
-
-    
     <!-- Footer-->
     <footer class="footer">
         <div class="container">
@@ -150,5 +90,5 @@
         </div>
     </footer>
 </body>
-
+<script src="bundle.js"></script>
 </html>

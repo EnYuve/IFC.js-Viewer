@@ -1,0 +1,29 @@
+{
+  "name": "ifc.js-viewer",
+  "version": "0.0.1",
+  "description": "IFC.js Crash course",
+  "main": "bundle.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnYuve/IFC.js-Viewer.git"
+  },
+  "author": "Nicolas Yuvero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EnYuve/IFC.js-Viewer/issues"
+  },
+  "homepage": "https://github.com/EnYuve/IFC.js-Viewer#readme",
+  "dependencies": {
+    "dexie": "^3.2.2",
+    "three": "^0.135.0",
+    "web-ifc-viewer": "^1.0.208"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.77.0"
+  }
+}

@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="../../../favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 780px)" href="mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Quicksand:wght@600&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
@@ -17,17 +15,9 @@
     <div class="div-nav">
         <div class="container viewer">
             <div class="navbar">
-                <a class="name" href="https://www.linkedin.com/in/nicolas-yuvero-bim-management/" target="_blank">
-                    <p class="project-name">Project Name</p>
-                </a>
-                <div class="options">
-                    <p>Options</p>
-                    <ul class="dropdown">
-                        <li>Something</li>
-                        <li>Somthing else</li>
-                        <li>Other</li>
-                    </ul>
-                </div>               
+                <a class="name" href="./index.html">
+                    <p class="project-name">Home</p>
+                </a>        
             </div>
             <div class="Logo">
                 <a class="docs-link" href="https://ifcjs.github.io/info/" target="_blank"></a>
@@ -36,26 +26,31 @@
     </div>
 </nav>
 <body>
-    <input type="file" id="file-input">
-    <canvas id="three-canvas"></canvas>
+    <div id="viewer-container">
+        <input type="file" id="file-input">
+        <div class="loader-container" id="loader">
+            <div class="loading-text">
+                <span>L</span>
+                <span>O</span>
+                <span>A</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </div>
+                <span><p id="progress"></p></span>
+        </div>
+        <section class="tool-bars">
+            <div class="side-bar">
+                <button class="tool-button active" id="dimension-button"> <img src="static\Tools\ruler-triangle.svg" alt="Dimension Tool"> </button>
+                <button class="tool-button active" id="comments-button"> <img src="static\Tools\comment-question.svg" alt="Comment tool"> </button>
+                <button class="tool-button active" id="clip-plane"> <img src="static\Tools\tool-crop.svg" alt="Section Tool"></button>
+                <button class="tool-button active" id="clean-button"> <img src="static\Tools\cross-circle.svg" alt="Delete All"> </button>
+                <button class="tool-button active" id="tree-menu"> <img src="static\Tools\chart-tree.svg" alt="Tree Structure Tab"> </button>
+                <button class="tool-button active" id="get-props"> <img src="static\Tools\layers.svg" alt="Properties Tab"></button>
+            </div>
+        </section>
+    </div>
     <script src="bundle.js"></script>
 </body>
-<section class="tool-bars">
-    <div class="side-bar">
-        <button class="tool-button"> </button>
-        <button class="tool-button"> </button>
-        <button class="tool-button"> </button>
-        <button class="tool-button"> </button>
-        <button class="tool-button"> </button>
-    </div>
-    <div class="bottom-bar">
-        <button class="tool-button"> </button>
-        <button class="tool-button"> </button>
-        <button class="tool-button"> </button>
-        <button class="tool-button"> </button>
-        <button class="tool-button"> </button>
-        <button class="tool-button"> </button>
-        <button class="tool-button"> </button>
-    </div>
-</section>
 </html>

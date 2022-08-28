@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Quicksand:wght@600&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/">
+    <title>IFC.js</title>
+</head>
+<nav class="nav container">
+    <div class="div-nav">
+        <div class="container viewer">
+            <div class="navbar">
+                <a class="name" href="./index.html">
+                    <p class="project-name">Home</p>
+                </a>
+                <div class="options">
+                    <p>Current Project</p>
+                    <ul class="dropdown">
+                        <li>Coming soon</li>
+                    </ul>
+                </div>               
+            </div>
+            <div class="Logo">
+                <a class="help-tool" id="help-button"></a>
+            </div>
+        </div>
+    </div>
+</nav>
+<body>
+    <div id="viewer-container">
+        <input type="file" id="file-input">
+        <div class="loader-container" id="loader">
+            <div class="loading-text">
+                <span>L</span>
+                <span>O</span>
+                <span>A</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </div>
+                <span><p id="progress"></p></span>
+        </div>
+        <section class="tool-bars">
+            <div class="side-bar">
+                <button class="tool-button" id="dimension-button"> <img src="static\Tools\ruler-triangle.svg" alt="Dimension Tool"> </button>
+                <button class="tool-button" id="comments-button"> <img src="static\Tools\comment-question.svg" alt="Comment tool"> </button>
+                <button class="tool-button" id="clip-plane"> <img src="static\Tools\tool-crop.svg" alt="Section Tool"></button>
+                <button class="tool-button" id="clean-button"> <img src="static\Tools\cross-circle.svg" alt="Delete All"> </button>
+                <button class="tool-button" id="tree-menu"> <img src="static\Tools\chart-tree.svg" alt="Tree Structure Tab"> </button>
+                <button class="tool-button" id="get-props"> <img src="static\Tools\layers.svg" alt="Properties Tab"></button>
+            </div>
+            <div id="ifc-tree-menu" class="hidden">
+                <ul id="myUL">
+                    <li id="tree-root">
+                            
+                    </li>
+                   </ul>
+            </div>
+            <div class="ifc-property-menu hidden" id="properties">
+                <div class="ifc-property-item" id="properties-header">
+                    <div>Key</div>
+                    <div class="ifc-property-value">Value</div>
+                </div>
+                <div id="ifc-property-menu-root"></div>
+            </div>
+        </section>
+        <div class="help-instructions hidden" id="help-tab">
+            <div class="help-box" id="help-box">
+                <div class="tool-box">
+                    <img src="static\Tools\ruler-triangle.svg" alt="Dimension-Tool">
+                    <div class="tool-help">
+                        <p class="tool-title"><b>Dimension Tool</b></p>
+                        <p><b>Double Click</b> to set both Starting and End Points</p>
+                        <p><b>Hover</b> and <b>Delete Key</b> to delete one instance</p>
+                        <p><b>Escape Key</b> to finish command</p>
+                    </div>
+                </div>
+                <div class="tool-box">
+                    <img src="static\Tools\comment-question.svg" alt="Comment-tool">
+                    <div class="tool-help">
+                        <p class="tool-title"><b>Comments Tool</b></p>
+                        <p><b>Double Click</b> to set the insertion point</p>
+                        <p><b>Hover</b> and <b>Delete Button</b> to delete one instance</p>
+                        <p><b>Escape Key</b> to finish command</p>
+                    </div>
+                </div>
+                <div class="tool-box">
+                    <img src="static\Tools\tool-crop.svg" alt="Section-Tool">
+                    <div class="tool-help">
+                        <p class="tool-title"><b>Section Tool</b></p>
+                        <p><b>Double Click</b> to set the clipping plane</p>
+                        <p><b>Hover</b> and <b>Delete Key</b> to delete one instance</p>
+                        <p><b>Escape Key</b> to finish command</p>
+                    </div>
+                </div>
+                <div class="tool-box">
+                    <img src="static\Tools\cross-circle.svg" alt="Delete-All">
+                    <div class="tool-help">
+                        <p class="tool-title"><b>Delete All Tool</b></p>
+                        <p><b>Click Here</b> to delete all comments, dimensions and clipping planes</p>
+                    </div>
+                </div>
+                <div class="tool-box">
+                    <img src="static\Tools\chart-tree.svg" alt="Tree-Structure-Tab">
+                    <div class="tool-help">
+                        <p class="tool-title"><b>Show IFC Tree Structure Tool</b></p>
+                        <p><b>Click Here</b> to show up the Tree Structure Tab</p>
+                        <p><b>Click</b> the caret to unfold</p>
+                    </div>
+                </div>
+                <div class="tool-box">
+                    <img src="static\Tools\layers.svg" alt="Properties-Tab">
+                    <div class="tool-help">
+                        <p class="tool-title"><b>Show Properties Tool</b></p>
+                        <p><b>Click Here</b> to show up the Properies Tab</p>
+                        <p><b>Double Click</b> to select one element</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
